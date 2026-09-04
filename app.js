@@ -49,3 +49,12 @@ if (window.crypto?.getRandomValues) {
   if (pick[0] % 2 === 1) reelImages.forEach((image) => image.classList.toggle('second'));
 }
 
+const shared = new URLSearchParams(window.location.search);
+const sharedName = shared.get('nome');
+const sharedIntention = shared.get('intencao');
+if (sharedName || sharedIntention) {
+  document.querySelector('#sharedCard').classList.remove('hidden');
+  document.querySelector('#sharedText').textContent = `${sharedName || 'Alguém especial'} recebeu uma vela por ${sharedIntention || 'uma intenção de carinho'}.`;
+  if (shared.get('video') === '2') reelImages.forEach((image) => image.classList.toggle('second'));
+}
+
