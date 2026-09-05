@@ -69,7 +69,7 @@ const wrapText = (context, text, maxWidth) => {
   return lines;
 };
 
-const createPersonalizedVideo = async (name, intention) => {
+const createPersonalizedVideo = async (name, intention, message) => {
   if (!video || !video.videoWidth || !window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) return null;
   const canvas = document.createElement('canvas');
   canvas.width = 540;
@@ -104,6 +104,9 @@ const createPersonalizedVideo = async (name, intention) => {
     context.fillStyle = `rgba(239, 212, 154, ${fade})`;
     context.font = '22px Georgia';
     context.fillText(`por ${intention}`, canvas.width / 2, 875);
+    context.fillStyle = `rgba(255, 248, 231, ${fade})`;
+    context.font = 'italic 18px Georgia';
+    wrapText(context, message, 430).slice(0, 2).forEach((line, index) => context.fillText(line, canvas.width / 2, 125 + index * 25));
     if (elapsed < duration) requestAnimationFrame(draw);
     else recorder.stop();
   };
@@ -114,12 +117,14 @@ const createPersonalizedVideo = async (name, intention) => {
 document.querySelector('#whatsBtn').addEventListener('click', async () => {
   const name = document.querySelector('#name').value.trim() || 'alguÃ©m especial';
   const intention = document.querySelector('#intention').value.toLowerCase();
+  const customMessage = document.querySelector('#customMessage').value.trim();
+  const message = customMessage || document.querySelector('#message').value;
   const button = document.querySelector('#whatsBtn');
   button.disabled = true;
   button.innerHTML = 'Preparando seu vÃ­deoâ€¦';
   try {
-    const fileBlob = await createPersonalizedVideo(name, intention);
-    const shareText = `Acendi uma vela por ${name}. Que esta luz leve carinho e esperanÃ§a. ðŸ•¯ï¸\n\n${window.location.origin}/`;
+    const fileBlob = await createPersonalizedVideo(name, intention, message);
+    const shareText = `${message}\n\nAcendi uma vela por ${name}. ðŸ•¯ï¸\n${window.location.origin}/`;
     if (fileBlob) {
       const file = new File([fileBlob], 'vela-de-luz.webm', { type: fileBlob.type });
       if (navigator.canShare?.({ files: [file] })) {
@@ -134,7 +139,7 @@ document.querySelector('#whatsBtn').addEventListener('click', async () => {
     }
     window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank', 'noopener');
   } catch (error) {
-    if (error.name !== 'AbortError') window.open(`https://wa.me/?text=${encodeURIComponent(`Acendi uma vela por ${name}. ðŸ•¯ï¸ ${window.location.origin}/`)}`, '_blank', 'noopener');
+    if (error.name !== 'AbortError') window.open(`https://wa.me/?text=${encodeURIComponent(`${message}\n\nAcendi uma vela por ${name}. ðŸ•¯ï¸ ${window.location.origin}/`)}`, '_blank', 'noopener');
   } finally {
     button.disabled = false;
     button.innerHTML = 'Gerar vÃ­deo e compartilhar <span>â†’</span>';
