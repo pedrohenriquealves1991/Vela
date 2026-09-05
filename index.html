@@ -3,24 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#17152b" />
-    <meta name="description" content="Acenda uma vela por alguém especial, receba uma mensagem bonita e compartilhe esperança." />
-    <meta property="og:title" content="Vela de Luz — um gesto de esperança" />
-    <meta property="og:description" content="Uma intenção, uma chama e uma mensagem para enviar pelo WhatsApp." />
-    <title>Vela de Luz — um gesto de esperança</title>
+    <meta name="theme-color" content="#17151a" />
+    <meta name="description" content="Uma pausa de fÃ©, carinho e esperanÃ§a para compartilhar com alguÃ©m especial." />
+    <meta property="og:title" content="Vela de Luz â€” um gesto de esperanÃ§a" />
+    <meta property="og:description" content="Uma intenÃ§Ã£o, uma chama e uma mensagem para enviar pelo WhatsApp." />
+    <title>Vela de Luz â€” um gesto de esperanÃ§a</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="shell">
-      <nav class="nav"><span class="brand"><span class="brand-mark">✦</span> Vela de Luz</span><div class="nav-links"><a href="#ritual">O ritual</a><a href="#transparencia">Nossa causa</a><span class="seal">✦ FEITO COM CARINHO</span></div></nav>
-      <section class="hero"><div class="copy reveal"><p class="eyebrow">UM GESTO DE FÉ, CARINHO E SOLIDARIEDADE</p><div class="shared-card hidden" id="sharedCard">✦ <span id="sharedText">Uma vela foi acesa por alguém especial.</span></div><h1>Acenda uma luz por quem mora no seu coração.</h1><p class="lead">Uma intenção, uma chama e uma mensagem bonita para enviar a alguém especial pelo WhatsApp.</p><div class="actions"><button class="primary" id="startBtn">Acender vela por R$ 9,90 <span>→</span></button><a class="text-link" href="#ritual">Conheça o ritual ↓</a></div><p class="micro"><span>✓</span> Pix pelo seu banco &nbsp; <span>✓</span> 30% para uma ONG parceira</p></div><div class="reel reveal" aria-label="Prévia de mensagens em vídeo"><div class="reel-frame"><img class="reel-img first" src="nun-a.png" alt="Pessoa devota sorrindo com uma vela dentro de uma igreja barroca" /><img class="reel-img second" src="devotee-b.png" alt="Freira sorrindo com uma vela dentro de uma igreja" /><div class="reel-shade"></div><div class="reel-copy"><span class="play">▶</span><span>UMA MENSAGEM<br /><b>PARA VOCÊ</b></span></div><small>Prévia · vídeo surpresa</small></div><div class="reel-caption">Imagens simbólicas, escolhidas para o seu momento.</div></div></section>
-      <section class="trust"><div><span class="trust-icon">✦</span><strong>Um gesto simples</strong><small>para marcar uma intenção</small></div><div><span class="trust-icon">♢</span><strong>Pagamento seguro</strong><small>direto no app do seu banco</small></div><div><span class="trust-icon">◌</span><strong>Impacto real</strong><small>30% para uma causa verificada</small></div></section>
-      <section class="ritual" id="ritual"><div class="stained-glass"><span class="rose-window">✦</span><span class="glass-ray ray-a"></span><span class="glass-ray ray-b"></span></div><div><p class="eyebrow">O RITUAL</p><h2>Uma pausa bonita no meio do dia.</h2><p>Escolha por quem você quer acender. Nós selecionamos uma mensagem em vídeo, com uma atmosfera diferente a cada pedido — sempre com respeito à fé e à memória de quem recebe.</p><div class="ritual-line"><span>01</span><b>Escreva sua intenção</b><span>02</span><b>Acenda com Pix</b><span>03</span><b>Envie pelo WhatsApp</b></div></div></section>
-      <section class="cause" id="transparencia"><div><p class="eyebrow">LUZ QUE CHEGA MAIS LONGE</p><h2>30% de cada vela para uma ONG parceira.</h2><p>A instituição será anunciada antes do lançamento. Publicaremos CNPJ, comprovantes de repasse e um relatório mensal nesta página.</p></div><div class="cause-card"><span>PRIMEIRO PROJETO</span><strong>Em seleção</strong><small>Fauna, reciclagem e reinserção social estão entre as causas avaliadas.</small></div></section>
-      <footer><span>© 2026 Vela de Luz · CNPJ: substitua pelo seu CNPJ</span><span>Conteúdo gerado por IA · Política de privacidade</span></footer>
+      <nav class="nav">
+        <a class="brand" href="index.html"><span class="brand-mark">âœ¦</span> Vela de Luz</a>
+        <div class="nav-links"><a href="#caminho">O caminho</a><a href="causas.html">TransparÃªncia</a><span class="seal">FEITO COM CARINHO</span></div>
+      </nav>
+
+      <section class="opening reveal" id="inicio">
+        <p class="eyebrow">ANTES DE ACENDER</p>
+        <div class="shared-card hidden" id="sharedCard">âœ¦ <span id="sharedText">Uma vela foi acesa por alguÃ©m especial.</span></div>
+        <h1>HÃ¡ uma luz que comeÃ§a quando a gente se lembra de alguÃ©m.</h1>
+        <p class="opening-message">Talvez hoje vocÃª tenha chegado aqui por uma filha, uma mÃ£e, uma prova, uma promessa ou por um desejo que ainda nÃ£o encontrou palavras. FaÃ§a uma pequena pausa. Pense nessa pessoa. Esta vela Ã© um jeito delicado de dizer: <em>estou rezando por vocÃª.</em></p>
+        <a class="begin-link" href="#caminho">ComeÃ§ar este momento <span>â†“</span></a>
+      </section>
+
+      <section class="window-stage reveal" aria-label="Uma freira segurando uma vela em uma igreja" id="caminho">
+        <div class="window-ornament"></div>
+        <div class="video-frame"><video id="introVideo" poster="nun-a.png" autoplay muted playsinline loop preload="metadata"><source src="videos/freira.mp4" type="video/mp4" /></video><div class="video-vignette"></div><span class="video-label">uma mensagem em imagem e luz</span></div>
+        <div class="stage-caption"><span>O CAMINHO</span><p>Doze pequenos passos, como aqueles quadros que acompanham os pilares de uma igreja. NÃ£o Ã© preciso correr. Leia somente o que fizer sentido hoje.</p></div>
+      </section>
+
+      <section class="journey" aria-label="Doze passos de uma oraÃ§Ã£o">
+        <article class="step reveal"><span class="step-number">01</span><div><p class="step-kicker">A chegada</p><h2>Toda oraÃ§Ã£o comeÃ§a quando alguÃ©m para.</h2><p>Por alguns instantes, deixe o mundo lÃ¡ fora. VocÃª nÃ£o precisa resolver tudo agora.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">02</span><div><p class="step-kicker">O nascimento</p><h2>A esperanÃ§a costuma nascer pequena.</h2><p>Ã€s vezes ela Ã© sÃ³ uma lembranÃ§a, um nome dito baixinho ou uma chama protegida entre as mÃ£os.</p></div></article>
+        <article class="step reveal"><span class="step-number">03</span><div><p class="step-kicker">O recomeÃ§o</p><h2>Todo dia pode guardar um comeÃ§o.</h2><p>Que a pessoa por quem vocÃª veio encontre forÃ§a para atravessar o que hoje parece pesado.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">04</span><div><p class="step-kicker">O chamado</p><h2>HÃ¡ nomes que carregamos em silÃªncio.</h2><p>Diga o nome, se quiser. Uma intenÃ§Ã£o fica mais bonita quando tem rosto, histÃ³ria e afeto.</p></div></article>
+        <article class="step reveal"><span class="step-number">05</span><div><p class="step-kicker">O encontro</p><h2>NinguÃ©m deveria atravessar um dia difÃ­cil sozinho.</h2><p>Que esta mensagem chegue como presenÃ§a: simples, prÃ³xima e sincera.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">06</span><div><p class="step-kicker">A mesa</p><h2>Partilhar tambÃ©m Ã© uma maneira de cuidar.</h2><p>Uma palavra de carinho pode alimentar o coraÃ§Ã£o de quem estÃ¡ precisando de coragem.</p></div></article>
+        <article class="step reveal"><span class="step-number">07</span><div><p class="step-kicker">A misericÃ³rdia</p><h2>Que a sua intenÃ§Ã£o seja uma ponte, nÃ£o um peso.</h2><p>Leve para a oraÃ§Ã£o o que vocÃª tem: gratidÃ£o, pedido, saudade ou apenas silÃªncio.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">08</span><div><p class="step-kicker">O caminho</p><h2>Mesmo sem ver o fim, um passo jÃ¡ Ã© caminho.</h2><p>Para a prova, o concurso, a saÃºde ou uma decisÃ£o: que venha serenidade para continuar.</p></div></article>
+        <article class="step reveal"><span class="step-number">09</span><div><p class="step-kicker">A entrega</p><h2>HÃ¡ pedidos que entregamos com humildade.</h2><p>Acender uma vela nÃ£o promete respostas prontas. Ã‰ um gesto de confianÃ§a e cuidado.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">10</span><div><p class="step-kicker">O silÃªncio</p><h2>Nem toda resposta chega em palavras.</h2><p>Permita que este instante seja apenas isso: um intervalo bonito no meio do dia.</p></div></article>
+        <article class="step reveal"><span class="step-number">11</span><div><p class="step-kicker">A luz</p><h2>Depois da noite, a esperanÃ§a encontra uma fresta.</h2><p>Que uma pequena luz acompanhe vocÃª e quem mora no seu coraÃ§Ã£o.</p></div></article>
+        <article class="step step-right reveal"><span class="step-number">12</span><div><p class="step-kicker">O envio</p><h2>Agora, leve esta mensagem a quem precisa.</h2><p>Quando sentir que Ã© hora, vocÃª poderÃ¡ acender a vela e enviar este carinho pelo WhatsApp.</p></div></article>
+      </section>
+
+      <section class="ritual-cta reveal" id="ritual"><p class="eyebrow">QUANDO SENTIR QUE Ã‰ HORA</p><h2>Acenda uma vela por quem mora no seu coraÃ§Ã£o.</h2><p>Escolha uma intenÃ§Ã£o, faÃ§a o Pix pelo seu banco e receba uma mensagem em vÃ­deo para compartilhar com alguÃ©m especial.</p><button class="primary" id="startBtn">Acender vela por R$ 9,90 <span>â†’</span></button></section>
+
+      <section class="cause-note reveal" id="transparencia"><div><p class="eyebrow">LUZ QUE CHEGA MAIS LONGE</p><h2>30% de todo dinheiro arrecadado Ã© repassado a causas sociais.</h2></div><a class="begin-link" href="causas.html">ConheÃ§a mais <span>â†’</span></a></section>
+
+      <footer><span>Â© 2026 Vela de Luz Â· CNPJ: substitua pelo seu CNPJ</span><span>ConteÃºdo gerado por IA Â· PolÃ­tica de privacidade</span></footer>
     </main>
-    <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="close" id="closeBtn" aria-label="Fechar">×</button><p class="eyebrow">SUA INTENÇÃO</p><h2 id="modalTitle">Por quem você acende esta vela?</h2><label>Nome ou motivo<input id="name" placeholder="Ex.: pela saúde da minha filha Ana" maxlength="80" /></label><label>Escolha uma mensagem<select id="intention"><option>Saúde e proteção</option><option>Prova ou concurso</option><option>Família e filhos</option><option>Gratidão</option><option>Uma promessa</option><option>Que algo dê certo</option></select></label><div class="prices"><button data-price="5.90">R$ 5,90</button><button class="selected" data-price="9.90">R$ 9,90 <small>mais escolhida</small></button></div><button class="primary full" id="payBtn">Continuar para o Pix <span>→</span></button><p class="modal-note">Pagamento pelo seu banco. O vídeo é liberado após a confirmação.</p></div></div>
-    <div class="modal hidden" id="pixModal" role="dialog" aria-modal="true" aria-labelledby="pixTitle"><div class="modal-box pix-box"><button class="close" id="pixClose" aria-label="Fechar">×</button><p class="eyebrow">PAGAMENTO DE TESTE</p><h2 id="pixTitle">Finalize pelo Pix</h2><div class="pix-code" id="pixCode">00020126580014BR.GOV.BCB.PIX0136vela-de-luz-demo52040000530398654049.905802BR5920VELA DE LUZ LTDA6009SAO PAULO62070503***6304ABCD</div><button class="secondary" id="copyBtn">Copiar código Pix</button><button class="primary full hidden" id="whatsBtn">Já fiz o Pix · preparar WhatsApp <span>→</span></button><p class="modal-note">No piloto, a liberação é manual. Em produção, o webhook do checkout confirma o pagamento antes de liberar o vídeo.</p><div class="success hidden" id="success">✓ Código copiado. Agora você pode preparar sua mensagem.</div></div></div>
+
+    <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="close" id="closeBtn" aria-label="Fechar">Ã—</button><p class="eyebrow">SUA INTENÃ‡ÃƒO</p><h2 id="modalTitle">Por quem vocÃª acende esta vela?</h2><label>Nome ou motivo<input id="name" placeholder="Ex.: pela saÃºde da minha filha Ana" maxlength="80" /></label><label>Escolha uma mensagem<select id="intention"><option>SaÃºde e proteÃ§Ã£o</option><option>Prova ou concurso</option><option>FamÃ­lia e filhos</option><option>GratidÃ£o</option><option>Uma promessa</option><option>Que algo dÃª certo</option></select></label><div class="prices"><button data-price="5.90">R$ 5,90</button><button class="selected" data-price="9.90">R$ 9,90 <small>mais escolhida</small></button></div><button class="primary full" id="payBtn">Continuar para o Pix <span>â†’</span></button><p class="modal-note">Pagamento pelo seu banco. O vÃ­deo Ã© liberado apÃ³s a confirmaÃ§Ã£o.</p></div></div>
+    <div class="modal hidden" id="pixModal" role="dialog" aria-modal="true" aria-labelledby="pixTitle"><div class="modal-box pix-box"><button class="close" id="pixClose" aria-label="Fechar">Ã—</button><p class="eyebrow">PAGAMENTO DE TESTE</p><h2 id="pixTitle">Finalize pelo Pix</h2><div class="pix-code" id="pixCode">00020126580014BR.GOV.BCB.PIX0136vela-de-luz-demo52040000530398654049.905802BR5920VELA DE LUZ LTDA6009SAO PAULO62070503***6304ABCD</div><button class="secondary" id="copyBtn">Copiar cÃ³digo Pix</button><button class="primary full hidden" id="whatsBtn">JÃ¡ fiz o Pix Â· preparar WhatsApp <span>â†’</span></button><p class="modal-note">No piloto, a liberaÃ§Ã£o Ã© manual. Em produÃ§Ã£o, o webhook do checkout confirma o pagamento antes de liberar o vÃ­deo.</p><div class="success hidden" id="success">âœ“ CÃ³digo copiado. Agora vocÃª pode preparar sua mensagem.</div></div></div>
     <script src="app.js"></script>
   </body>
 </html>
