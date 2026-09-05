@@ -7,6 +7,7 @@ Landing page estatica, mobile-first, para validar a experiencia antes de integra
 - direcao visual old money catolica, com vitrais, pedra, vinho e dourado envelhecido;
 - duas imagens verticais realistas usadas como previas animadas;
 - dois videos verticais MP4 prontos para WhatsApp (`videos/freira.mp4` e `videos/beata.mp4`);
+- mini-vÃ­deo personalizado no navegador, com nome e intenÃ§Ã£o sobrepostos, pronto para compartilhar em celulares compatÃ­veis;
 - formulario de intencao e escolha de preco;
 - modal de Pix com codigo ficticio e botao Copiar;
 - responsividade para celular;
@@ -18,6 +19,7 @@ Landing page estatica, mobile-first, para validar a experiencia antes de integra
 - trocar o CNPJ e o codigo Pix ficticio;
 - definir ONG, percentual/valor exato e politica de repasse;
 - trocar o Pix manual por checkout/API com webhook de confirmacao;
+- integrar o compartilhamento de MP4 no backend para garantir compatibilidade tambÃ©m no WhatsApp Web/Desktop;
 - substituir as previas por videos finais, se desejar video fotorealista real;
 - adicionar a pagina real de prestacao de contas;
 - revisar textos com contador/advogado e politica de privacidade.
