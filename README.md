@@ -6,6 +6,7 @@ Landing page estatica, mobile-first, para validar a experiencia antes de integra
 
 - direcao visual old money catolica, com vitrais, pedra, vinho e dourado envelhecido;
 - duas imagens verticais realistas usadas como previas animadas;
+- dois videos verticais MP4 prontos para WhatsApp (`videos/freira.mp4` e `videos/beata.mp4`);
 - formulario de intencao e escolha de preco;
 - modal de Pix com codigo ficticio e botao Copiar;
 - responsividade para celular;
